@@ -1,0 +1,97 @@
+/* Reset some basic styles */
+body, h1, h2, p, form, label, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2E5077, #4DA1A9, #79D7BE, #F6F4F0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow-y: auto; /* Ensure the page is scrollable */
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 3px solid #4DA1A9;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Heading Styling */
+h1 {
+    color: #2E5077;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label Styling */
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Input and Select Styling */
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Button Styling */
+button {
+    background-color: #2E5077;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-family: 'Verdana', sans-serif;
+}
+
+button:hover {
+    background-color: #4DA1A9;
+}
+
+/* Prediction Text Styling */
+h2 {
+    color: #333;
+    margin-top: 20px;
+    font-family: 'Verdana', sans-serif;
+}
